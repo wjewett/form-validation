@@ -1,0 +1,96 @@
+html {
+	background-color: #eee;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 62.5%;
+}
+@media (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+	label {
+		display: none;
+	}
+}
+@media (max-width: 56.25em) {
+	html {
+		font-size: 50%;
+	}
+}
+@media (min-width: 112.5em) {
+	html {
+		font-size: 75%;
+	}
+}
+.container {
+	width: 70%;
+	margin: 3rem 15%;
+	text-align: center;
+}
+@media (max-width: 56.25em) {
+	.container {
+		width: 90%;
+		margin: 0 5%;
+	}
+}
+.form-wrapper {
+	width: 50%;
+	float: left;
+}
+@media (max-width: 37.5em) {
+	.form-wrapper {
+		width: 100%;
+	}
+}
+.form {
+	background-color: #ddd;
+	text-align: center;
+	border: 1px solid rgb(55, 55, 55);
+	border-radius: 5px;
+	margin: 2rem;
+}
+@media (max-width: 56.25em) {
+	.form {
+		margin: 1rem;
+	}
+}
+.form-heading {
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+	padding: 1.5rem;
+}
+.form-subheading {
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 0 3rem;
+	height: auto;
+}
+.form-item {
+	margin: 2.4rem 3rem;
+}
+input {
+	padding: 0.8rem;
+	width: 13rem;
+	border-radius: 5px;
+	display: inline-block;
+	border: 1px solid #777;
+	box-shadow: none;
+	box-shadow: 0 1.6rem 3rem rgba(0, 0, 0, 0.15);
+	background-color: #eee;
+}
+input[type="submit"] {
+	font-weight: 700;
+	width: auto;
+}
+input[type="tel"] {
+	width: 8.2rem;
+}
+.input:focus:valid {
+	box-shadow: inset 0 0 10px green;
+}
+.input:focus:invalid {
+	box-shadow: inset 0 0 10px red;
+}
+label {
+	font-weight: 600;
+}
